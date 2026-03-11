@@ -1,4 +1,4 @@
-name: First Github Action
+name: Hello Workflow
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Print Greeting
-        run: echo "Hello from gitHub Actions!"
+        run: echo "Hello from GitHub Actions!"
