@@ -26,5 +26,5 @@ jobs:
       - name: Print Runner Operating System
         run: echo "Runner OS is $RUNNER_OS"
 
-      - name: International Failure
-        run: exit 1
+      - name: Fixed Step
+        run: echo "Pipeline fixed !"
