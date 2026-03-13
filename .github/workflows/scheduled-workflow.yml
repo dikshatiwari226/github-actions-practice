@@ -3,7 +3,7 @@ name: Scheduled Workflow
 on:
   push:
   schedule:
-    - cron: "0 0 * * 1"
+    - cron: "0 9 * * 1"
 
 jobs:
   test:
