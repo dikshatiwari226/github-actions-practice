@@ -26,6 +26,3 @@ jobs:
 
       - name: Print Python Version
         run: python --version
-
-      - name: Force Failure(for testing)
-        run: exit 1
