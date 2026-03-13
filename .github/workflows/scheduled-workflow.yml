@@ -1,0 +1,14 @@
+name: Scheduled Workflow
+
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * 1"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Workflow running on schedule !"
