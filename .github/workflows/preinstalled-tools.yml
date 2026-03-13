@@ -1,0 +1,22 @@
+name: Check Preinstalled Tools
+
+on: push
+
+jobs:
+  check-tools:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Installed Tool Versions
+        run: |
+          echo "Docker Version:"
+          docker --version
+
+          echo "Python Version:"
+          python --version
+
+          echo "Node Version:"
+          node --version
+
+          echo "Git Version"
+          git --version
