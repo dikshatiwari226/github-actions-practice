@@ -1,0 +1,16 @@
+name: Manual Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Enter environment (staging/production)"
+        required: true
+
+jobs:
+  manual-job:
+    runs-on: ununtu-latest
+
+    steps:
+      - name: Print Environment
+        run: echo "Selected environment is ${{ github.event.inputs.environment}}"
